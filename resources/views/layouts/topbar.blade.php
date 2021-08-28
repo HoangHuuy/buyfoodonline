@@ -19,6 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/top-bar.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/login.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -71,24 +72,6 @@
                     </ul>
                 </div>
             </div>
-            <!-- top nav  -->
-            <div id="nav-top">
-                <div class="menu">
-                    <a href="http://127.0.0.1:8000/do-an">Đồ Ăn</a>
-                    <a href="http://127.0.0.1:8000/com">Cơm</a>
-                    <a href="http://127.0.0.1:8000/chao">Cháo</a>
-                    <a href="http://127.0.0.1:8000/pho">Phở</a>
-                    <a href="http://127.0.0.1:8000/do-an-vat">Đồ Ăn Vặt</a>
-                    <a href="http://127.0.0.1:8000/giai-khat">Giải Khát</a>
-                </div>
-                <div class="search">
-                    <form action="" method="get">
-                        <input type="text" placeholder="Tìm kiếm sản phẩm" class="text">
-                        <input type="submit" value="{{__('Tìm kiếm')}}" class="submit">
-                    </form>
-                </div>
-            </div>
-        <!-- end of top nav -->
         </nav>
         
         <main class="py-4">

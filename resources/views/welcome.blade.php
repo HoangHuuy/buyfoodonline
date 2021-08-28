@@ -25,7 +25,7 @@
             }
 
             .flex-center {
-                align-items: center;
+
                 display: flex;
                 justify-content: center;
             }
@@ -57,8 +57,21 @@
                 text-decoration: none;
                 text-transform: uppercase;
             }
+            .nav > a:hover {
+                border-bottom: 2px solid red;
+            }
+
+            #al-login {
+                text-transform: none;
+                color: rgba(0, 0, 0, 0.5);
+            }
+
+            #al-login:hover {
+                color: #636b6f;
+            }
 
             .m-b-md {
+                margin-top: 100px;
                 margin-bottom: 30px;
             }
         </style>
@@ -68,7 +81,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">chủ</a>
+                        <a id="al-login" href="{{ url('/home') }}">{{ Auth::user()->name }}</a>
                     @else
                         <a href="{{ route('login') }}">Đăng nhập</a>
 
@@ -81,18 +94,16 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    KHTL
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <div class="links nav">
+                    <a href="http://127.0.0.1:8000/do-an">Đồ Ăn</a>
+                    <a href="http://127.0.0.1:8000/com">Cơm</a>
+                    <a href="http://127.0.0.1:8000/chao">Cháo</a>
+                    <a href="http://127.0.0.1:8000/pho">Phở</a>
+                    <a href="http://127.0.0.1:8000/do-an-vat">Đồ Ăn Vặt</a>
+                    <a href="http://127.0.0.1:8000/giai-khat">Giải Khát</a>
                 </div>
             </div>
         </div>

@@ -1,0 +1,10 @@
+.col-md-8 .card .card-header{
+    background-color: rgba(255, 0, 0, 0.9);
+    color: white;
+}
+
+.mb-0 .btn-primary{
+    background-color: rgba(255, 0, 0, 0.9);
+    border: none;
+    
+}
